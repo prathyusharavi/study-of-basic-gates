@@ -63,34 +63,41 @@ Y= A⊕B
 
 
 **PROGRAM**
-```
-\*
+
 Program for logic gates and verify its truth table in quartus using Verilog programming
- Developed by:YENUGANTI PRATHYUSHA
- RegisterNumber: 2122232400187
-\*
-module aaaa(a,b,c,d,e,x,y,z);
-input a,b;
-output c,d,e,x,y,z;
-assign c=a&b;
-assign d=a|b;
-assign e=a^b;
-assign x=~(a&b);
-assign y=~(a|b);
-assign z=~(a^b);
-endmodule
+
+ ### Developed by: yenuganti prathyusha
+ ### RegisterNumber: 212223240187
+
+ ![Screenshot 2024-03-07 093446](https://github.com/keerthanapillaram/study-of-basic-gates/assets/145743072/c8fcc730-4a60-4e8c-b4ef-a47ee60de37c)
+
+ 
+**Logic symbol & Truthtable**
 ```
+module LogicGates(a,b,and_out,or_out,not_out,xor_out,xnor_out,nand_out,nor_out);
+input a,b;
+output and_out,or_out,not_out,xor_out,xnor_out,nand_out,nor_out;
+and g1(and_out,a,b);
+or g2(or_out,a,b);
+not g3(not_out,a);
+xor g4(xor_out,a,b);
+xnor g5(xnor_out,a,b);
+nand g6(nand_out,a,b);
+nor g7(nor_out,a,b);
+endmodule
+
+```
+
+**RTL realization Output:** 
+![image](https://github.com/keerthanapillaram/study-of-basic-gates/assets/145743072/c27b0a4a-e6bd-4064-b214-e65fcf5b5303)
+
 
 **RTL**
-![Screenshot 2024-08-29 143441](https://github.com/user-attachments/assets/10447b25-c7db-4c9b-b292-45b84dbdea1e)
-
-**RTL realization Output:**
-
-![Screenshot 2024-08-29 143354](https://github.com/user-attachments/assets/6bc74222-4b2e-4780-96f5-909f5c785ed3)
-
-
+![image](https://github.com/keerthanapillaram/study-of-basic-gates/assets/145743072/b5596b3f-aed6-41e4-8046-d3148de0af69)
+## Output
+![Screenshot 2024-03-07 093408](https://github.com/keerthanapillaram/study-of-basic-gates/assets/145743072/5b46802a-22e2-477e-9236-9af1520a37bb)
 
 **Result:**
-The program is verified successfully using the software quartus prime
+Thus the different digital IC's are studied and the truth table for different logic gates are verified.
 
 
